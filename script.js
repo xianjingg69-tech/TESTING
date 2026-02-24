@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-/* TYPING */
+/* ================= TYPING ================= */
 const typingText = document.querySelector(".typing-text");
 const text = "Lukman Al Khakim";
 let index = 0;
@@ -12,12 +12,11 @@ function type(){
         setTimeout(type,80);
     }
 }
-type();
+if(typingText) type();
 
-/* REVEAL ANIMATION */
+/* ================= REVEAL ================= */
 function reveal(){
-    const elements = document.querySelectorAll(".reveal-up");
-    elements.forEach(el=>{
+    document.querySelectorAll(".reveal-up").forEach(el=>{
         const windowHeight = window.innerHeight;
         const elementTop = el.getBoundingClientRect().top;
         if(elementTop < windowHeight - 100){
@@ -28,13 +27,15 @@ function reveal(){
 window.addEventListener("scroll",reveal);
 reveal();
 
-/* THEME TOGGLE */
+/* ================= THEME ================= */
 const toggle = document.getElementById("themeToggle");
+if(toggle){
 toggle.addEventListener("click",()=>{
     document.body.classList.toggle("light");
 });
+}
 
-/* SOCIAL MEDIA OPEN APP */
+/* ================= SOCIAL ================= */
 document.querySelectorAll("[data-social]").forEach(btn=>{
 btn.addEventListener("click",function(e){
 e.preventDefault();
@@ -56,18 +57,17 @@ window.location.href = `https://tiktok.com/@${username}`;
 },1000);
 }
 
+});
+});
+
 /* ================= CARD CLICK GLOW ================= */
 const cards = document.querySelectorAll(".card");
 
-cards.forEach(card => {
-    card.addEventListener("click", () => {
+cards.forEach(card=>{
+card.addEventListener("click",()=>{
+    cards.forEach(c=>c.classList.remove("active-card"));
+    card.classList.add("active-card");
+});
+});
 
-        // Hapus glow dari card lain
-        cards.forEach(c => c.classList.remove("active-card"));
-
-        // Tambahkan glow ke yang diklik
-        card.classList.add("active-card");
-
-    });
-    
 });
