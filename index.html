@@ -1,92 +1,61 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Lukman</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Lukman</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- NAVBAR -->
+<!-- NAVIGATION -->
 <nav>
-    <h1>Lukman</h1>
+    <h2>Lukman</h2>
     <ul>
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#social">Social</a></li>
         <li><a href="#certificate">Certificate</a></li>
+        <li><a href="#social">Social</a></li>
     </ul>
-    <button id="themeToggle">🌙</button>
+    <button id="themeToggle">Theme</button>
 </nav>
 
 <!-- HERO -->
-<section class="hero">
-    <div class="hero-left reveal-up">
-        <h1>Hello, I'm <br>
-            <span class="typing-text"></span>
-        </h1>
-        <p>Pelajar yang tertarik pada dunia teknologi dan pengembangan website modern.</p>
-
-        <div class="hero-buttons">
-            <a href="#about" class="btn btn-primary">About Me</a>
-            <a href="#certificate" class="btn btn-outline">Certificate</a>
-        </div>
+<section class="hero" id="home">
+    <div>
+        <h1><span class="typing-text"></span></h1>
+        <p>Student • Tech Enthusiast • Gamer</p>
     </div>
 
-    <div class="hero-right reveal-up">
-        <img src="sukuna.jpg" alt="Foto Profil">
-    </div>
+    <img src="img/profile.jpg" alt="Profile">
 </section>
 
 <!-- ABOUT -->
 <section id="about">
     <h2 class="reveal-up">About Me</h2>
 
-    <div class="card-container">
-        <div class="card reveal-up">
-            <h3>Asal Sekolah</h3>
-            <p>SMK Teknologi Indonesia</p>
-        </div>
-
-        <div class="card reveal-up">
-            <h3>Hobi</h3>
-            <p>Ngoding, Gaming, Pendakian Gunung</p>
-        </div>
-
-        <div class="card reveal-up">
-            <h3>Motto Hidup</h3>
-            <p>"Terus belajar dan berkembang setiap hari."</p>
-        </div>
+    <div class="card reveal-up">
+        <p>
+        Saya Lukman Al Khakim, pelajar yang tertarik di dunia teknologi, gaming, dan desain.
+        Saya suka mengutak-atik sistem Android, optimasi performa, dan membuat tampilan yang aesthetic.
+        </p>
     </div>
 </section>
 
 <!-- GALLERY -->
 <section id="gallery">
-    <h2 class="reveal-up">Pendakian</h2>
+    <h2 class="reveal-up">Gallery</h2>
 
     <div class="gallery">
-        <img src="pendakian1.jpg" class="reveal-up">
-        <img src="pendakian2.jpg" class="reveal-up">
-        <img src="pendakian3.jpg" class="reveal-up">
-    </div>
-</section>
-
-<!-- SOCIAL -->
-<section id="social">
-    <h2 class="reveal-up">Social Media</h2>
-
-    <div class="social-container">
-        <div class="social-card reveal-up">
-            <h3>Instagram</h3>
-            <a href="#" data-social="instagram" data-username="username_ig">Kunjungi</a>
+        <div class="card reveal-up">
+            <img src="img/pendakian.jpg" alt="Pendakian">
         </div>
 
-        <div class="social-card reveal-up">
-            <h3>TikTok</h3>
-            <a href="#" data-social="tiktok" data-username="username_tiktok">Kunjungi</a>
+        <div class="card reveal-up">
+            <img src="img/setup.jpg" alt="Setup">
         </div>
     </div>
 </section>
@@ -94,14 +63,43 @@
 <!-- CERTIFICATE -->
 <section id="certificate">
     <h2 class="reveal-up">Certificate</h2>
+
     <div class="gallery">
-        <img src="cert1.jpg" class="reveal-up">
-        <img src="cert2.jpg" class="reveal-up">
+        <div class="card reveal-up">
+            <img src="img/cert1.jpg" alt="Certificate 1">
+        </div>
+
+        <div class="card reveal-up">
+            <img src="img/cert2.jpg" alt="Certificate 2">
+        </div>
+    </div>
+</section>
+
+<!-- SOCIAL -->
+<section id="social">
+    <h2 class="reveal-up">Social Media</h2>
+
+    <div class="gallery">
+        <div class="card reveal-up">
+            <a href="#" 
+               data-social="instagram" 
+               data-username="usernamekamu">
+               Instagram
+            </a>
+        </div>
+
+        <div class="card reveal-up">
+            <a href="#" 
+               data-social="tiktok" 
+               data-username="usernamekamu">
+               TikTok
+            </a>
+        </div>
     </div>
 </section>
 
 <footer>
-    <p>© 2026 Lukman Al Khakim</p>
+    © 2026 Lukman Al Khakim
 </footer>
 
 <script src="script.js"></script>
