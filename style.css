@@ -129,9 +129,26 @@ gap:30px;
 }
 
 .card{
-background:var(--card);
-padding:30px;
-border-radius:20px;
+background: var(--card);
+padding: 30px;
+border-radius: 20px;
+border: 1.5px solid #8b0000;
+transition: 0.3s ease;
+cursor: pointer;
+}
+
+/* Efek saat dipencet */
+.card:active{
+transform: scale(0.98);
+}
+
+/* Glow merah menyala */
+.card.active-card{
+border-color: #ff0000;
+box-shadow: 
+0 0 10px #ff0000,
+0 0 20px #ff0000,
+0 0 40px rgba(255, 0, 0, 0.7);
 }
 
 /* GALLERY */
