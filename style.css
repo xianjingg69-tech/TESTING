@@ -81,6 +81,15 @@ gap:40px;
 font-size:50px;
 }
 
+.hero-top-text{
+font-size: 20px;
+letter-spacing: 3px;
+color: #ff4d4d;
+text-transform: uppercase;
+display: inline-block;
+margin-bottom: 10px;
+}
+
 .hero span{
 color:var(--accent);
 }
