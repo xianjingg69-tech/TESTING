@@ -56,7 +56,19 @@ window.location.href = `https://tiktok.com/@${username}`;
 },1000);
 }
 
-});
+/* ================= CARD CLICK GLOW ================= */
+const cards = document.querySelectorAll(".card");
+
+cards.forEach(card => {
+    card.addEventListener("click", () => {
+
+        // Hapus glow dari card lain
+        cards.forEach(c => c.classList.remove("active-card"));
+
+        // Tambahkan glow ke yang diklik
+        card.classList.add("active-card");
+
+    });
 });
 
 });
