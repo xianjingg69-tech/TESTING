@@ -7,11 +7,11 @@ scroll-behavior:smooth;
 }
 
 :root{
---bg: linear-gradient(135deg, #000000 40%, #1a0000 70%, #3b0000 100%);
+--bg:#1a0000;   /* merah hitam seimbang */
 --text:#ffffff;
 --accent:#ff1a1a;
---card:#140000;
---nav:#0d0d0d;
+--card:#0f0f0f;
+--nav:#0a0a0a;
 }
 
 /* LIGHT MODE */
@@ -25,8 +25,6 @@ body.light{
 
 body{
 background: var(--bg);
-background-attachment: fixed;
-background-size: cover;
 color: var(--text);
 transition: 0.4s ease;
 }
