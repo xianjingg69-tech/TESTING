@@ -14,11 +14,18 @@ scroll-behavior:smooth;
 }
 
 body{
-background: linear-gradient(270deg, #000000, #1a0000, #330000, #000000);
-background-size: 600% 600%;
-animation: redWave 20s ease infinite;
+background: linear-gradient(270deg, 
+#000000,
+#3b0000,
+#660000,
+#8b0000,
+#660000,
+#3b0000,
+#000000
+);
+background-size: 500% 500%;
+animation: redWave 8s ease-in-out infinite;
 color: var(--text);
-transition: 0.4s ease;
 }
 
 @keyframes redWave{
